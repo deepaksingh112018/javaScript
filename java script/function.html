@@ -4,6 +4,7 @@
 	// myFunction();
 	// function myFunction(a="deepak"){
 	// 	document.write(a);
+	// 	alert(a);
 	// }
 	//==========================================
 	// let a = function(arg){
@@ -12,12 +13,24 @@
 	// a("I am a");
 	// let b = a;
 	// b("I am b");
-
-	//==========================================
-	//a();//not working
-	let a = function(arg="HEllo"){
-		alert(arg);
+// 
+	// ==========================================
+	// 
+	// let a = function(arg="HEllo"){
+	// 	alert(arg);
+	// 	console.log(this);
+	// }
+	// a();
+	// ====================================================
+		// 3. arrow function........
+	let a = (a) =>{
+		// console.log(this);
 		console.log(this);
 	}
-	a();
+	a(5);
+
+<p>
+<button onclick="myFun(this)" value="5"></button>
+	<b>Click</b>
+	</p>
 </script>

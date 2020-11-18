@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.head1{
+			height: 300px;
+			width: 400px;
+			background-color: pink;
+		}
+		.head2{
+
+			background-color: purple;
+		}
+	</style>
+</head>
+ 
+<body>
+	<div id="main" class="head1"></div>
+ <button onclick="changeClass()">clickme</button>
+</body>
+<script type="text/javascript">
+
+	let a = document.getElementById('main').setAttribute('onclick','head1()');
+	// alert(a);
+	function head1() {
+		alert();
+	}
+	// ===========================================================================
+	
+	// function changeClass(){
+		// let a = document.getElementById('main').classList.add('head2')
+	// }
+	// ====================================================================
+	// function changeClass(){
+		// let a = document.getElementById('main').classList.toggle('head2');
+	// }
+	// ================================================================================
+	// function changeClass(){
+		// let a = document.getElementById('main').classList.remove('head2');
+	// }
+
+
+</script>
+</html>

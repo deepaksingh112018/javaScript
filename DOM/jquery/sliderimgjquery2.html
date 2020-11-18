@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<img src="images/a1.jfif" height="400px;" width="400px;" id="slider">
+</body>
+<script src="jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		fun()
+		let a = ['a1.jfif','b1.jfif','c1.jfif','d1.jfif','e1.jfif'];
+		let b = 0;
+		});
+		function fun(){
+			$('#slider').attr('src','images/'+a[b]);
+				b++;
+				if (b==a.lenght) {
+					b=a;
+				}
+				window.setTimeout('fun()',3000);
+		}
+	
+</script>
+</html>

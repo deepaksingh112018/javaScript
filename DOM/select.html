@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function viewSelectedFriut(arg) {
+			// var sel = document.getElementById("fruit");
+			// var text = sel.options[sel.selectedIndex].text;
+			// alert(text)
+			alert($(arg).find(":selected").text());
+		}
+		
+	</script>
+</head>
+<body>
+	<select id="fruit" onchange="viewSelectedFriut(this)">
+		<option>select fruit</option>
+		<option value="1">mango</option>
+		<option value="2">apple</option>
+		<option value="3">grapes</option>
+		<option value="4">papaya</option>
+	</select>
+
+</body>
+</html>

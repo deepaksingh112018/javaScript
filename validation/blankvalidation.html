@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#error{
+			color:red;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+Enter Your Name: <input type="text" id="main">
+
+<button onclick="validateInputbox()">clickme</button>
+<br>
+<span id="error">this field is required</span>
+</body>
+<script type="text/javascript">
+	function validateInputbox(){
+		// alert();
+		let a = document.getElementById('main').value.trim();
+		if (a) {
+			
+			document.getElementById('error').style.display = "none";
+		}
+		else{
+			
+			document.getElementById('error').style.display = "block";
+			
+		}
+	}
+</script>
+</html>

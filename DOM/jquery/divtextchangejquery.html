@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		
+		#box1{
+			height: 250px;
+			width: 350px;
+			background-color: purple;
+			color: white;
+			text-align: center;
+			margin:0px auto;
+			line-height: 250px;
+			font-size: 30px;
+		}
+		#box2{
+			height: 250px;
+			width: 350px;
+			background-color: red;
+			color: white;
+			text-align: center;
+			margin:0px auto;
+			line-height: 250px;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="mainbox">
+	<div id="box1" >Ego</div>
+	<br>
+	<br>
+	<div id="box2" >Attitude</div>
+</div>
+</body>
+<script src="jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#mainbox").click(function(){
+			let a = $('#box1').text() ;
+			let b = $('#box2').text();
+			$('#box1').text(b);
+			$('#box2').text(a);
+			
+			
+		});
+	});
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		#a1{
+			height: 200px;
+			width: 200px;
+			color: blue;
+			background: yellow;
+			text-align: center;
+			line-height: 200px;
+			font-size: 25px;
+			margin: 0px auto;
+		}
+		#a2{
+			height: 200px;
+			width: 200px;
+			color: white;
+			background: red;
+			text-align: center;
+			line-height: 200px;
+			font-size: 25px;
+			margin: 0px auto;
+		}
+		button{
+			height: 30px; width: 100px;
+			color: white;
+			background-color:blue;
+			margin-top: 3%;
+			margin-left: 43%;		}
+	</style>
+	<script type="text/javascript">
+		function pra() {
+			let a = document.getElementById('a1').innerText;
+			let b = document.getElementById("a2").innerText;
+			document.getElementById("a1").innerText = b;
+			document.getElementById("a2").innerText = a;
+
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="a1">DEEPAK
+	</div>
+	<br>
+	<div id="a2"> praveen sir</div>
+	<button onclick="pra()">click me</button>
+
+</body>
+</html>

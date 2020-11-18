@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.div1{
+			height: 300px;width: 300px;background-color: yellow;margin:0px auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<br>
+	<button id="btn">Click me</button>
+</body>
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#btn').click(function(){
+			$('.div1').css({"border":"5px solid","background":"red"});
+			$('.div1').attr("onclick","first()");
+			// $(this).css("background","red");
+		});
+	});
+</script>
+</html>

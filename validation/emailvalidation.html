@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<input type="email" id="email">
+	<button onclick="btn()">click me</button>
+</body>
+<script>
+	function btn() {
+		let a = document.getElementById('email').value;
+		if (/^([a-z0-9_.+-])+\@(([a-z0-9])+\.)+([a-z]{2,4})+$/i.test(a)) {
+			alert('valid email');
+		}
+		else{
+			alert('invalid email');
+		}
+	}
+</script>
+</html>

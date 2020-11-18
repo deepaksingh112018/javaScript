@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		span{
+			color: red;
+			display: none;
+			font-size: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<input type="text" id="name">
+	<span>Name field is required??</span>
+	<br>
+	<br>
+	<input type="number" id="age">
+	<span>Age filed is required??</span>
+	
+	<br>
+	<br>
+	<input type="email" id="email">
+	<span> Email filed is required??</span>
+	<br>
+	<br>
+	<input type="password" id="password">
+	<span>  Password filed is required??</span>
+	<br>
+	<br>
+	<input type="number" id="mobilenum">
+	<span>Mobile num filed is required??</span>
+	<br>
+	<br>
+	<button onclick="validation()">Click me</button>
+
+</body>
+<script type="text/javascript">
+	function validation() {
+		  let a = document.getElementsByTagName('input').length;
+		// alert();
+		  for (var i = 0; i < a; i++) 
+		  {
+		  	document.getElementsByTagName('span')[i].style.display="none";
+		  	if(document.getElementsByTagName('input')[i].value=="")
+		  	{
+		  	document.getElementsByTagName('span')[i].style.display="block";
+		  	}
+		  
+		  }
+	}
+</script>
+</html>
