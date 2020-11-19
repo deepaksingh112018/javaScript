@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+</body>
+<img src="../home work/image/i.jpg"  id="slider" style="height: 600px"
+width="50%">
+<button onclick="changeimg()">click me</button>
+<script>
+	let i= 0; //start point
+	let img = 0;
+	let time = 1000;
+
+	// image list
+	img[0] = "i.jpg";
+	img[1] = "j.jpg";
+	img[2] = "k.jpg";
+	img[3] = "l.jpg";
+	img[4] = "m.jpg";
+	img[5] = "n.jpg";
+
+	// change time
+	function changeimg(){
+		document.getElementById('slider').src=img[i];
+		if (i<img.length-1) {
+			i++;
+		}
+		else{
+			i=0;
+		}
+		setTimeout('changeimg',"time");
+	}
+
+</script>
+</html>
